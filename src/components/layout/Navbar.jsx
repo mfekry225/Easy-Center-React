@@ -23,7 +23,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Navigation Tabs */}
+      {/* Navigation Tabs — finance و docs لم تعودا هنا */}
       {visibleTabs.map(tab => (
         <button
           key={tab.id}
