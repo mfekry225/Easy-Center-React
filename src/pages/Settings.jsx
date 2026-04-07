@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { useApp } from '../../context/AppContext';
-import { usePermissions } from '../../hooks/usePermissions';
-import { ROLES } from '../../utils/constants';
-import Widget from '../ui/Widget';
+import { useApp } from '../context/AppContext';
+import { usePermissions } from '../hooks/usePermissions';
+import { ROLES } from '../utils/constants';
+import Widget from '../components/ui/Widget';
 
 const COLORS = ['#1a56db','#059669','#7c3aed','#dc2626','#d97706','#0891b2','#db2777','#0f172a'];
 
