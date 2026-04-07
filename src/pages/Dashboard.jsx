@@ -1,8 +1,8 @@
-import { useStudents } from '../../hooks/useStudents';
-import { useEmployees } from '../../hooks/useEmployees';
-import { useStorage } from '../../hooks/useStorage';
-import { usePermissions } from '../../hooks/usePermissions';
-import { useApp } from '../../context/AppContext';
+import { useStudents } from '../hooks/useStudents';
+import { useEmployees } from '../hooks/useEmployees';
+import { useStorage } from '../hooks/useStorage';
+import { usePermissions } from '../hooks/usePermissions';
+import { useApp } from '../context/AppContext';
 import StatCard from '../ui/StatCard';
 import Widget from '../ui/Widget';
 
