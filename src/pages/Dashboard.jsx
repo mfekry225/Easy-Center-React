@@ -3,8 +3,8 @@ import { useEmployees } from '../hooks/useEmployees';
 import { useStorage } from '../hooks/useStorage';
 import { usePermissions } from '../hooks/usePermissions';
 import { useApp } from '../context/AppContext';
-import StatCard from '../ui/StatCard';
-import Widget from '../ui/Widget';
+import StatCard from '../components/ui/StatCard';
+import Widget from '../components/ui/Widget';
 
 // ══════════════════════════════════════════════════════════
 //  Dashboard — الصفحة الرئيسية
