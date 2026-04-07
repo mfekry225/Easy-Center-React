@@ -9,7 +9,7 @@ export const ROLES = {
     icon: '👑',
     desc: 'صلاحيات كاملة',
     password: 'manager123',
-    tabs: ['dashboard', 'students', 'sessions', 'online', 'attendance', 'iep', 'hr', 'finance', 'docs', 'reports', 'center', 'settings'],
+    tabs: ['dashboard', 'students', 'sessions', 'online', 'attendance', 'iep', 'hr', 'reports', 'center', 'settings'],
   },
   vice: {
     id: 'vice',
@@ -17,7 +17,7 @@ export const ROLES = {
     icon: '🏅',
     desc: 'إدارة وإشراف',
     password: 'vice123',
-    tabs: ['dashboard', 'students', 'sessions', 'online', 'attendance', 'iep', 'hr', 'finance', 'docs', 'reports', 'center'],
+    tabs: ['dashboard', 'students', 'sessions', 'online', 'attendance', 'iep', 'hr', 'reports', 'center'],
   },
   specialist: {
     id: 'specialist',
@@ -41,7 +41,10 @@ export const ROLES = {
     icon: '💰',
     desc: 'المالية والرواتب',
     password: 'acc123',
-    tabs: ['dashboard', 'students', 'finance'],
+    // المحاسب يصل لإدارة المركز ليرى تبويب المالية بداخلها
+    tabs: ['dashboard', 'students', 'center'],
+    // تحديد التبويبات الفرعية المتاحة له داخل إدارة المركز
+    centerSubTabs: ['finance'],
   },
   viewer: {
     id: 'viewer',
@@ -55,6 +58,8 @@ export const ROLES = {
 
 // ══════════════════════════════════════════════
 //  📑 تعريف التبويبات / الصفحات
+//  ملاحظة: finance و docs أُزيلا من هنا لأنهما
+//  أصبحا تبويبات فرعية داخل صفحة إدارة المركز
 // ══════════════════════════════════════════════
 
 export const TABS = [
@@ -65,11 +70,19 @@ export const TABS = [
   { id: 'attendance', label: 'الحضور',         icon: '📋' },
   { id: 'iep',        label: 'IEP',            icon: '🎯' },
   { id: 'hr',         label: 'الموظفون',       icon: '👥' },
-  { id: 'finance',    label: 'المالية',        icon: '💰' },
-  { id: 'docs',       label: 'الوثائق',        icon: '📁' },
   { id: 'reports',    label: 'التقارير',       icon: '📊' },
   { id: 'center',     label: 'إدارة المركز',   icon: '🏛️' },
   { id: 'settings',   label: 'الإعدادات',      icon: '⚙️' },
+];
+
+// ══════════════════════════════════════════════
+//  🏛️ التبويبات الفرعية داخل صفحة إدارة المركز
+// ══════════════════════════════════════════════
+
+export const CENTER_SUBTABS = [
+  { id: 'finance',  label: 'المالية',        icon: '💰' },
+  { id: 'docs',     label: 'الوثائق',        icon: '📁' },
+  { id: 'settings', label: 'إعدادات المركز', icon: '⚙️' },
 ];
 
 // ══════════════════════════════════════════════
